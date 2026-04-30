@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=280&text=Script%20Kittens&fontSize=70&color=0:0d0d18,40:1a0a2e,100:0a1628&fontColor=gradient&customColorList=0,2,2,5,30&stroke=3b82f6&strokeWidth=1&animation=fadeIn&fontAlignY=42&desc=CEO%3A%201shot%20%E2%80%94%20Building%20in%20the%20Dark&descSize=18&descFontColor=60a5fa&descAlignY=62" />
+<img src="https://capsule-render.vercel.app/api?type=waving&height=280&text=Script%20Kittens&fontSize=70&color=0:0d0d18,40:1a0a2e,100:0a1628&fontColor=7c3aed&stroke=7c3aed&strokeWidth=2&animation=fadeIn&fontAlignY=42&desc=CEO%3A%201shot%20%E2%80%94%20Building%20in%20the%20Dark&descSize=18&descFontColor=a78bfa&descAlignY=62" />
 
 <br/>
 
@@ -20,7 +20,7 @@
 
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=900&size=14&pause=99999&color=3B82F6&center=true&vCenter=true&width=300&lines=──────+CONNECT+──────" />
+### `── CONNECT ──`
 
 <br/>
 
@@ -36,7 +36,7 @@
 
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=900&size=14&pause=99999&color=3B82F6&center=true&vCenter=true&width=300&lines=──────+ABOUT+ME+──────" />
+### `── ABOUT ME ──`
 
 </div>
 
@@ -62,7 +62,7 @@ I run the technical side — building APIs, Discord bots, automation tools, and 
 
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=900&size=14&pause=99999&color=3B82F6&center=true&vCenter=true&width=300&lines=──────+VISITORS+──────" />
+### `── VISITORS ──`
 
 <br/>
 
@@ -74,7 +74,7 @@ I run the technical side — building APIs, Discord bots, automation tools, and 
 
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=900&size=14&pause=99999&color=3B82F6&center=true&vCenter=true&width=300&lines=──────+TECH+STACK+──────" />
+### `── TECH STACK ──`
 
 <br/>
 
@@ -97,7 +97,7 @@ I run the technical side — building APIs, Discord bots, automation tools, and 
 
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=900&size=14&pause=99999&color=3B82F6&center=true&vCenter=true&width=300&lines=──────+GITHUB+STATS+──────" />
+### `── GITHUB STATS ──`
 
 <br/>
 
@@ -114,7 +114,7 @@ I run the technical side — building APIs, Discord bots, automation tools, and 
 
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=900&size=14&pause=99999&color=3B82F6&center=true&vCenter=true&width=300&lines=──────+TROPHIES+──────" />
+### `── TROPHIES ──`
 
 <br/>
 
@@ -126,7 +126,7 @@ I run the technical side — building APIs, Discord bots, automation tools, and 
 
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=900&size=14&pause=99999&color=3B82F6&center=true&vCenter=true&width=300&lines=──────+ACTIVITY+──────" />
+### `── ACTIVITY ──`
 
 <br/>
 
