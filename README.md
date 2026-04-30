@@ -4,15 +4,15 @@
 
 <br/>
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=20&pause=1000&color=818CF8&center=true&vCenter=true&width=650&lines=game+tools+%7C+apis+%7C+discord+bots+%F0%9F%90%88%E2%80%8D%E2%AC%9B;building+things+people+actually+pay+for;script+kittens+%E2%80%94+best+cheat+dev+server;if+it+don%27t+make+%24%2C+it+don%27t+make+sense.)](https://github.com/alfurqanimran-eng)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=20&pause=1000&color=818CF8&center=true&vCenter=true&width=650&lines=game+tools+%7C+apis+%7C+discord+bots+%F0%9F%90%88%E2%80%8D%E2%AC%9B;building+things+people+actually+pay+for;script+kittens+%E2%80%94+best+cheat+dev+server;if+it+don%27t+make+%24%2C+it+don%27t+make+sense.)](https://github.com/1shot-1moan)
 
 <br/>
 
-![Profile Views](https://komarev.com/ghpvc/?username=alfurqanimran-eng&style=flat-square&color=818cf8&label=👁️+VIEWS)
+![Profile Views](https://komarev.com/ghpvc/?username=1shot-1moan&style=flat-square&color=818cf8&label=👁️+VIEWS)
 &nbsp;&nbsp;
-![Followers](https://img.shields.io/github/followers/alfurqanimran-eng?style=flat-square&color=3b82f6&label=FOLLOWERS)
+![Followers](https://img.shields.io/github/followers/1shot-1moan?style=flat-square&color=3b82f6&label=FOLLOWERS)
 &nbsp;&nbsp;
-![Stars](https://img.shields.io/github/stars/alfurqanimran-eng?style=flat-square&color=818cf8&label=⭐+STARS)
+![Stars](https://img.shields.io/github/stars/1shot-1moan?style=flat-square&color=818cf8&label=⭐+STARS)
 
 </div>
 
@@ -66,7 +66,7 @@ I run the technical side — building APIs, Discord bots, automation tools, and 
 
 <br/>
 
-<img src="https://count.getloli.com/get/@alfurqanimran-eng.github.readme?theme=rule34" alt="visitor count" />
+<img src="https://count.getloli.com/get/@1shot-1moan.github.readme?theme=rule34" alt="visitor count" />
 
 </div>
 
@@ -101,12 +101,12 @@ I run the technical side — building APIs, Discord bots, automation tools, and 
 
 <br/>
 
-<img src="https://github-readme-stats.vercel.app/api?username=alfurqanimran-eng&show_icons=true&theme=transparent&hide_border=true&title_color=818cf8&icon_color=3b82f6&text_color=a78bfa&bg_color=0d0d18&count_private=true&rank_icon=github&include_all_commits=true" width="48%" />
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=alfurqanimran-eng&theme=transparent&hide_border=true&ring=818cf8&fire=3b82f6&currStreakLabel=818cf8&sideLabels=a78bfa&dates=555577&background=0d0d18&stroke=1a0a2e" width="48%" />
+<img src="https://github-readme-stats.vercel.app/api?username=1shot-1moan&show_icons=true&theme=transparent&hide_border=true&title_color=818cf8&icon_color=3b82f6&text_color=a78bfa&bg_color=0d0d18&count_private=true&rank_icon=github&include_all_commits=true" width="48%" />
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=1shot-1moan&theme=transparent&hide_border=true&ring=818cf8&fire=3b82f6&currStreakLabel=818cf8&sideLabels=a78bfa&dates=555577&background=0d0d18&stroke=1a0a2e" width="48%" />
 
 <br/>
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=alfurqanimran-eng&layout=compact&theme=transparent&hide_border=true&title_color=818cf8&text_color=a78bfa&bg_color=0d0d18&langs_count=8" width="42%" />
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=1shot-1moan&layout=compact&theme=transparent&hide_border=true&title_color=818cf8&text_color=a78bfa&bg_color=0d0d18&langs_count=8" width="42%" />
 
 </div>
 
@@ -118,7 +118,7 @@ I run the technical side — building APIs, Discord bots, automation tools, and 
 
 <br/>
 
-<img src="https://github-profile-trophy.vercel.app/?username=alfurqanimran-eng&theme=discord&no-frame=true&no-bg=true&margin-w=6&column=7" />
+<img src="https://github-profile-trophy.vercel.app/?username=1shot-1moan&theme=discord&no-frame=true&no-bg=true&margin-w=6&column=7" />
 
 </div>
 
@@ -130,7 +130,7 @@ I run the technical side — building APIs, Discord bots, automation tools, and 
 
 <br/>
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=alfurqanimran-eng&theme=tokyo-night&hide_border=true&bg_color=0d0d18&color=818cf8&line=3b82f6&point=a78bfa&area=true&area_color=1a0a2e" width="100%" />
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=1shot-1moan&theme=tokyo-night&hide_border=true&bg_color=0d0d18&color=818cf8&line=3b82f6&point=a78bfa&area=true&area_color=1a0a2e" width="100%" />
 
 </div>
 
