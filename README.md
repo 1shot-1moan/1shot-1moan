@@ -71,6 +71,7 @@ class Furqan:
 </p>
 
 ---
+
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=00d9ff&height=80&section=footer" />
 </p>
