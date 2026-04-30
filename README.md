@@ -66,7 +66,7 @@ I run the technical side — building APIs, Discord bots, automation tools, and 
 
 <br/>
 
-<img src="https://count.getloli.com/get/@1shot-1moan.github.readme?theme=rule34" alt="visitor count" />
+<img src="https://profile-counter.glitch.me/1shot-1moan/count.svg" alt="visitor count" />
 
 </div>
 
@@ -102,7 +102,7 @@ I run the technical side — building APIs, Discord bots, automation tools, and 
 <br/>
 
 <img src="https://github-readme-stats.vercel.app/api?username=1shot-1moan&show_icons=true&theme=transparent&hide_border=true&title_color=818cf8&icon_color=3b82f6&text_color=a78bfa&bg_color=0d0d18&count_private=true&rank_icon=github&include_all_commits=true" width="48%" />
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=1shot-1moan&theme=transparent&hide_border=true&ring=818cf8&fire=3b82f6&currStreakLabel=818cf8&sideLabels=a78bfa&dates=555577&background=0d0d18&stroke=1a0a2e" width="48%" />
+<img src="https://streak-stats.demolab.com?user=1shot-1moan&theme=transparent&hide_border=true&ring=818cf8&fire=3b82f6&currStreakLabel=818cf8&sideLabels=a78bfa&dates=555577&background=0d0d18&stroke=1a0a2e" width="48%" />
 
 <br/>
 
@@ -118,7 +118,7 @@ I run the technical side — building APIs, Discord bots, automation tools, and 
 
 <br/>
 
-<img src="https://github-profile-trophy.vercel.app/?username=1shot-1moan&theme=discord&no-frame=true&no-bg=true&margin-w=6&column=7" />
+<img src="https://github-trophies.vercel.app/?username=1shot-1moan&theme=discord&no-frame=true&no-bg=true&margin-w=6&column=7" />
 
 </div>
 
