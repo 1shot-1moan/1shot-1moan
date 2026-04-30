@@ -62,6 +62,24 @@ I run the technical side — building APIs, Discord bots, automation tools, and 
 
 <div align="center">
 
+### `── QUICK STATS ──`
+
+| | |
+|:---:|:---:|
+| 🔨 **Currently building** | Script Kittens API · SK Discord Bot |
+| 📚 **Currently learning** | C++, System Design, FastAPI |
+| 🤝 **Open to** | Collabs, custom bots, paid projects |
+| 💬 **Ask me about** | Discord bots, game APIs, Python, AI agents |
+| 📺 **YouTube** | [@1shot1moanz](https://www.youtube.com/@1shot1moanz) |
+| 💬 **Discord** | [Script Kittens](https://discord.gg/tWwUSPh5GT) · 3000+ members |
+| 📩 **Reach me** | alfurqanimran@gmail.com |
+
+</div>
+
+---
+
+<div align="center">
+
 ### `── VISITORS ──`
 
 <br/>
