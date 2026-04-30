@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=280&text=1shot&fontSize=100&color=0:0d0d18,40:1a0a2e,100:0a1628&fontColor=a78bfa&stroke=3b82f6&strokeWidth=2&animation=fadeIn&fontAlignY=42&desc=CEO%20%40%20Script%20Kittens%20%E2%80%94%20Building%20in%20the%20Dark&descSize=18&descFontColor=60a5fa&descAlignY=62" />
+<img src="https://capsule-render.vercel.app/api?type=waving&height=280&text=Script%20Kittens&fontSize=70&color=0:0d0d18,40:1a0a2e,100:0a1628&fontColor=gradient&customColorList=0,2,2,5,30&stroke=3b82f6&strokeWidth=1&animation=fadeIn&fontAlignY=42&desc=CEO%3A%201shot%20%E2%80%94%20Building%20in%20the%20Dark&descSize=18&descFontColor=60a5fa&descAlignY=62" />
 
 <br/>
 
@@ -66,7 +66,7 @@ I run the technical side — building APIs, Discord bots, automation tools, and 
 
 <br/>
 
-<img src="https://profile-counter.glitch.me/1shot-1moan/count.svg" alt="visitor count" />
+![Visitors](https://api.visitorbadge.io/api/visitors?path=1shot-1moan&label=VISITORS&labelColor=%230d0d18&countColor=%23818cf8&style=flat-square)
 
 </div>
 
