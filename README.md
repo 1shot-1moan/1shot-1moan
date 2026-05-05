@@ -58,6 +58,26 @@ I run the technical side — building APIs, Discord bots, automation tools, and 
 
 <br clear="right"/>
 
+
+---
+
+<div align="center">
+
+### ONYX GATE AUTH - SDK EXAMPLES
+
+<br/>
+
+> **[auth.script-kittens.com](https://auth.script-kittens.com)** - HWID lock, license keys, live sessions and plan gating for your cheats and tools.
+
+<br/>
+
+| Language | Repo | What's Inside |
+|:---:|:---:|:---|
+| ![C++](https://img.shields.io/badge/C++-f34b7d?style=flat&logo=cplusplus&logoColor=white) | [Onyx-Auth-CPP-Example](https://github.com/1shot-1moan/Onyx-Auth-CPP-Example) | Zero deps, ImGui ready, string obfuscation |
+| ![Python](https://img.shields.io/badge/Python-3572A5?style=flat&logo=python&logoColor=white) | [Onyx-Auth-Python-Example](https://github.com/1shot-1moan/Onyx-Auth-Python-Example) | Console loader, plan gating, auto-login |
+| ![C#](https://img.shields.io/badge/C%23-178600?style=flat&logo=csharp&logoColor=white) | [Onyx-Auth-CSharp-Example](https://github.com/1shot-1moan/Onyx-Auth-CSharp-Example) | WinForms UI, live key validation, password strength |
+
+</div>
 ---
 
 <div align="center">
