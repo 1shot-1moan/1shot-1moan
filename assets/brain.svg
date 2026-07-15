@@ -1,0 +1,7 @@
+<svg width="360" height="260" viewBox="0 0 360 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="360" height="260" rx="16" fill="#05070d"/>
+  <path d="M77 143C45 99 77 51 125 63C140 32 187 30 204 61C238 48 281 70 276 113C318 129 315 195 266 202C246 232 205 228 188 202C160 226 116 217 111 183C94 181 84 166 77 143Z" fill="#f8fafc"/>
+  <path d="M105 135C125 113 149 115 163 137M167 97C141 97 126 113 128 134M179 82C199 96 205 117 195 141M218 99C242 107 252 128 244 151M122 165C150 179 180 174 197 151M203 174C223 185 249 177 259 156" stroke="#090b12" stroke-width="10" stroke-linecap="round"/>
+  <path d="M122 63C132 80 151 85 170 78M204 61C203 82 214 95 234 101" stroke="#090b12" stroke-width="9" stroke-linecap="round"/>
+  <text x="54" y="235" fill="#64748b" font-family="Consolas, monospace" font-size="16">think / build / ship</text>
+</svg>
