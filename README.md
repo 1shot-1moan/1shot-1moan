@@ -50,7 +50,7 @@ The main focus is simple: build tools that can be shipped, managed, updated, and
 
 <div align="center">
 
-<img src="./assets/terminal-card.svg" width="100%" alt="Terminal card" />
+<img src="./assets/terminal-generated.png" width="100%" alt="Terminal identity card" />
 
 </div>
 
@@ -179,14 +179,11 @@ branding sync
 
 <div align="center">
 
-## Contribution
-
-<img src="https://github-readme-stats.vercel.app/api?username=1shot-1moan&show_icons=true&theme=transparent&hide_border=true&title_color=38bdf8&icon_color=38bdf8&text_color=cbd5e1&bg_color=05070d&count_private=true&include_all_commits=true" width="49%" />
-<img src="https://streak-stats.demolab.com?user=1shot-1moan&theme=transparent&hide_border=true&ring=38bdf8&fire=f97316&currStreakLabel=38bdf8&sideLabels=cbd5e1&dates=64748b&background=05070d&stroke=1e293b" width="49%" />
+<sub>Script Kittens / Systems / Automation / Products</sub>
 
 <br/>
 <br/>
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=1shot-1moan&theme=github-compact&hide_border=true&bg_color=05070d&color=cbd5e1&line=38bdf8&point=f8fafc&area=true&area_color=0f172a" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=waving&height=120&section=footer&color=0:05070d,55:0f172a,100:020617" width="100%" />
 
 </div>
