@@ -1,18 +1,158 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=280&text=Script%20Kittens&fontSize=70&color=0:0d0d18,40:1a0a2e,100:0a1628&fontColor=7c3aed&stroke=7c3aed&strokeWidth=2&animation=fadeIn&fontAlignY=42&desc=CEO%3A%201shot%20%E2%80%94%20Building%20in%20the%20Dark&descSize=18&descFontColor=a78bfa&descAlignY=62" />
+<img src="https://capsule-render.vercel.app/api?type=venom&height=260&text=1SHOT&fontSize=84&fontAlignY=42&color=0:07070b,45:111827,100:020617&fontColor=f8fafc&stroke=38bdf8&strokeWidth=1&desc=Script%20Kittens%20%7C%20Systems%20%7C%20Automation%20%7C%20Products&descSize=18&descAlignY=66&descFontColor=94a3b8" width="100%" />
 
 <br/>
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=20&pause=1000&color=818CF8&center=true&vCenter=true&width=650&lines=game+tools+%7C+apis+%7C+discord+bots+%F0%9F%90%88%E2%80%8D%E2%AC%9B;building+things+people+actually+pay+for;script+kittens+%E2%80%94+best+cheat+dev+server;if+it+don%27t+make+%24%2C+it+don%27t+make+sense.)](https://github.com/1shot-1moan)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=18&duration=2600&pause=700&color=38BDF8&center=true&vCenter=true&width=760&lines=building+systems+that+ship;reseller+portals+%2B+auth+systems+%2B+desktop+clients;discord+bots+%2B+automation+%2B+backend+infrastructure;Script+Kittens+is+the+brand.+execution+is+the+standard.)](https://github.com/1shot-1moan)
 
 <br/>
 
-![Profile Views](https://komarev.com/ghpvc/?username=1shot-1moan&style=flat-square&color=818cf8&label=👁️+VIEWS)
-&nbsp;&nbsp;
-![Followers](https://img.shields.io/github/followers/1shot-1moan?style=flat-square&color=3b82f6&label=FOLLOWERS)
-&nbsp;&nbsp;
-![Stars](https://img.shields.io/github/stars/1shot-1moan?style=flat-square&color=818cf8&label=⭐+STARS)
+<img src="https://komarev.com/ghpvc/?username=1shot-1moan&style=for-the-badge&color=0f172a&label=PROFILE+VIEWS" />
+<img src="https://img.shields.io/github/followers/1shot-1moan?style=for-the-badge&color=0f172a&label=FOLLOWERS&logo=github" />
+<img src="https://img.shields.io/github/stars/1shot-1moan?style=for-the-badge&color=0f172a&label=STARS&logo=github" />
+
+</div>
+
+---
+
+<table>
+<tr>
+<td width="58%">
+
+## Know About Me
+
+I am **1shot**, the builder behind **Script Kittens**.
+
+I work on practical software: backend systems, reseller portals, Discord automation, desktop clients, auth flows, update systems, and tools that need to be managed from the server side.
+
+My focus is simple:
+
+```text
+make it usable
+make it controllable
+make it reliable enough to sell
+```
+
+I care about clean flows, fast iteration, and products that do not collapse the moment real users touch them.
+
+</td>
+<td width="42%">
+
+## Current Focus
+
+```text
+Product     Script Kittens ecosystem
+Backend     APIs, auth, sync, portals
+Desktop     C++ / Win32 / ImGui
+Automation  Discord bots, dashboards
+Ops         releases, updates, logging
+```
+
+## Contact
+
+[![Discord](https://img.shields.io/badge/Discord-Script%20Kittens-111827?style=for-the-badge&logo=discord&logoColor=38bdf8)](https://discord.gg/tWwUSPh5GT)
+[![YouTube](https://img.shields.io/badge/YouTube-1shot1moanz-111827?style=for-the-badge&logo=youtube&logoColor=ef4444)](https://www.youtube.com/@1shot1moanz)
+[![Instagram](https://img.shields.io/badge/Instagram-fegrial-111827?style=for-the-badge&logo=instagram&logoColor=f472b6)](https://www.instagram.com/fegrial)
+[![Email](https://img.shields.io/badge/Email-contact-111827?style=for-the-badge&logo=gmail&logoColor=f8fafc)](mailto:alfurqanimran@gmail.com)
+
+</td>
+</tr>
+</table>
+
+---
+
+<div align="center">
+
+## Selected Work
+
+</div>
+
+<table>
+<tr>
+<td width="50%">
+
+### UID Bypass EXE
+
+Windows desktop client with authorization, backend sync, Discord RPC, DLL updates, reseller branding, and a clean base EXE flow.
+
+```text
+C++17 / Win32 / DirectX 11 / ImGui
+server-managed updates
+reseller authorization
+```
+
+[![Repo](https://img.shields.io/badge/View%20Repo-UID%20Bypass%20Exe-020617?style=for-the-badge&logo=github&logoColor=38bdf8)](https://github.com/1shot-1moan/UID-Bypass-Exe)
+
+</td>
+<td width="50%">
+
+### Onyx Gate Auth
+
+Authorization layer for keys, HWID locks, plan gates, sessions, and controlled software access.
+
+```text
+license keys
+device locking
+live backend validation
+```
+
+[![Auth](https://img.shields.io/badge/Open-auth.script--kittens.com-020617?style=for-the-badge&logo=googlechrome&logoColor=38bdf8)](https://auth.script-kittens.com)
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+### Script Kittens Bot
+
+Discord automation for community operations, product delivery, support flows, and management tasks.
+
+```text
+Discord automation
+community tooling
+backend integrations
+```
+
+[![Discord](https://img.shields.io/badge/Join-Script%20Kittens-020617?style=for-the-badge&logo=discord&logoColor=38bdf8)](https://discord.gg/tWwUSPh5GT)
+
+</td>
+<td width="50%">
+
+### Reseller Systems
+
+Portal-driven client management with codes, owner branding, remote sync, and update delivery.
+
+```text
+reseller control
+client authorization
+branding sync
+```
+
+[![Website](https://img.shields.io/badge/Website-script--kittens.com-020617?style=for-the-badge&logo=googlechrome&logoColor=38bdf8)](https://script-kittens.com)
+
+</td>
+</tr>
+</table>
+
+---
+
+<div align="center">
+
+## Stack
+
+<img src="https://skillicons.dev/icons?i=cpp,cs,python,js,nodejs,fastapi,flask,redis,postgres,sqlite,git,github,linux,visualstudio,vscode" />
+
+<br/>
+<br/>
+
+![C++](https://img.shields.io/badge/C++-020617?style=for-the-badge&logo=cplusplus&logoColor=38bdf8)
+![Python](https://img.shields.io/badge/Python-020617?style=for-the-badge&logo=python&logoColor=facc15)
+![C#](https://img.shields.io/badge/C%23-020617?style=for-the-badge&logo=csharp&logoColor=a78bfa)
+![FastAPI](https://img.shields.io/badge/FastAPI-020617?style=for-the-badge&logo=fastapi&logoColor=22c55e)
+![Discord](https://img.shields.io/badge/Discord%20Bots-020617?style=for-the-badge&logo=discord&logoColor=38bdf8)
+![Win32](https://img.shields.io/badge/Win32-020617?style=for-the-badge&logo=windows&logoColor=38bdf8)
+![ImGui](https://img.shields.io/badge/Dear%20ImGui-020617?style=for-the-badge&logo=framework&logoColor=f8fafc)
 
 </div>
 
@@ -20,15 +160,20 @@
 
 <div align="center">
 
-### `── CONNECT ──`
+## GitHub Signal
+
+<img src="https://github-readme-stats.vercel.app/api?username=1shot-1moan&show_icons=true&theme=transparent&hide_border=true&title_color=38bdf8&icon_color=38bdf8&text_color=cbd5e1&bg_color=020617&count_private=true&include_all_commits=true" width="49%" />
+<img src="https://streak-stats.demolab.com?user=1shot-1moan&theme=transparent&hide_border=true&ring=38bdf8&fire=f97316&currStreakLabel=38bdf8&sideLabels=cbd5e1&dates=64748b&background=020617&stroke=1e293b" width="49%" />
 
 <br/>
+<br/>
 
-[![Discord](https://img.shields.io/badge/Discord-Script%20Kittens-0d0d18?style=for-the-badge&logo=discord&logoColor=818cf8&labelColor=1a0a2e)](https://discord.gg/tWwUSPh5GT)
-[![YouTube](https://img.shields.io/badge/YouTube-1shot1moanz-0d0d18?style=for-the-badge&logo=youtube&logoColor=818cf8&labelColor=1a0a2e)](https://www.youtube.com/@1shot1moanz)
-[![Instagram](https://img.shields.io/badge/Instagram-fegrial-0d0d18?style=for-the-badge&logo=instagram&logoColor=818cf8&labelColor=1a0a2e)](https://www.instagram.com/fegrial)
-[![Website](https://img.shields.io/badge/Website-script--kittens.com-0d0d18?style=for-the-badge&logo=googlechrome&logoColor=818cf8&labelColor=1a0a2e)](https://script-kittens.com)
-[![Email](https://img.shields.io/badge/Email-get%20in%20touch-0d0d18?style=for-the-badge&logo=gmail&logoColor=818cf8&labelColor=1a0a2e)](mailto:alfurqanimran@gmail.com)
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=1shot-1moan&layout=compact&theme=transparent&hide_border=true&title_color=38bdf8&text_color=cbd5e1&bg_color=020617&langs_count=8" width="44%" />
+
+<br/>
+<br/>
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=1shot-1moan&theme=github-compact&hide_border=true&bg_color=020617&color=cbd5e1&line=38bdf8&point=f8fafc&area=true&area_color=0f172a" width="100%" />
 
 </div>
 
@@ -36,148 +181,19 @@
 
 <div align="center">
 
-### `── ABOUT ME ──`
+## Operating Principle
 
-</div>
-
-<br/>
-
-<img align="right" src="https://media1.tenor.com/m/nMBmWMuCKhIAAAAd/honkai-star-rail-kafka.gif" width="260" />
-
-**Hey, I'm 1shot** — CEO of **Script Kittens**, a developer community focused on game tools, cheats, and custom software. We're one of the best cheat development servers out there, home to 3000+ members who build, sell, and learn together.
-
-I run the technical side — building APIs, Discord bots, automation tools, and AI-powered systems that our community actually uses and pays for. Everything I build is designed to make money and solve real problems.
+```text
+Code is not finished when it compiles.
+It is finished when users can run it, update it, and trust the flow.
+```
 
 <br/>
 
-🐈‍⬛ &nbsp;**Script Kittens** — top cheat dev & tools community · 3000+ members  
-🎮 &nbsp;**Game Tools** — Free Fire, Garena APIs and external tools  
-🤖 &nbsp;**Discord Bots** — custom bots for communities and businesses  
-🧠 &nbsp;**AI Systems** — 6-agent AI company, 50 specialized skills  
-📺 &nbsp;**YouTube** — tutorials, tools, and community content · 1200+ subs  
+[![Discord](https://img.shields.io/badge/Script%20Kittens-Join%20Discord-020617?style=for-the-badge&logo=discord&logoColor=38bdf8)](https://discord.gg/tWwUSPh5GT)
+[![YouTube](https://img.shields.io/badge/YouTube-Watch-020617?style=for-the-badge&logo=youtube&logoColor=ef4444)](https://www.youtube.com/@1shot1moanz)
+[![Website](https://img.shields.io/badge/Website-Visit-020617?style=for-the-badge&logo=googlechrome&logoColor=38bdf8)](https://script-kittens.com)
 
-<br clear="right"/>
-
-
----
-
-<div align="center">
-
-### ONYX GATE AUTH - SDK EXAMPLES
-
-<br/>
-
-> **[auth.script-kittens.com](https://auth.script-kittens.com)** - HWID lock, license keys, live sessions and plan gating for your cheats and tools.
-
-<br/>
-
-| Language | Repo | What's Inside |
-|:---:|:---:|:---|
-| ![C++](https://img.shields.io/badge/C++-f34b7d?style=flat&logo=cplusplus&logoColor=white) | [Onyx-Auth-CPP-Example](https://github.com/1shot-1moan/Onyx-Auth-CPP-Example) | Zero deps, ImGui ready, string obfuscation |
-| ![Python](https://img.shields.io/badge/Python-3572A5?style=flat&logo=python&logoColor=white) | [Onyx-Auth-Python-Example](https://github.com/1shot-1moan/Onyx-Auth-Python-Example) | Console loader, plan gating, auto-login |
-| ![C#](https://img.shields.io/badge/C%23-178600?style=flat&logo=csharp&logoColor=white) | [Onyx-Auth-CSharp-Example](https://github.com/1shot-1moan/Onyx-Auth-CSharp-Example) | WinForms UI, live key validation, password strength |
-
-</div>
----
-
-<div align="center">
-
-### `── QUICK STATS ──`
-
-| | |
-|:---:|:---:|
-| 🔨 **Currently building** | Script Kittens API · SK Discord Bot |
-| 📚 **Currently learning** | C++, System Design, FastAPI |
-| 🤝 **Open to** | Collabs, custom bots, paid projects |
-| 💬 **Ask me about** | Discord bots, game APIs, Python, AI agents |
-| 📺 **YouTube** | [@1shot1moanz](https://www.youtube.com/@1shot1moanz) |
-| 💬 **Discord** | [Script Kittens](https://discord.gg/tWwUSPh5GT) · 3000+ members |
-| 📩 **Reach me** | alfurqanimran@gmail.com |
-
-</div>
-
----
-
-<div align="center">
-
-### `── VISITORS ──`
-
-<br/>
-
-![Visitors](https://api.visitorbadge.io/api/visitors?path=1shot-1moan&label=VISITORS&labelColor=%230d0d18&countColor=%23818cf8&style=flat-square)
-
-</div>
-
----
-
-<div align="center">
-
-### `── TECH STACK ──`
-
-<br/>
-
-![Python](https://img.shields.io/badge/Python-0d0d18?style=for-the-badge&logo=python&logoColor=818cf8)
-![C++](https://img.shields.io/badge/C++-0d0d18?style=for-the-badge&logo=cplusplus&logoColor=818cf8)
-![C#](https://img.shields.io/badge/C%23-0d0d18?style=for-the-badge&logo=csharp&logoColor=818cf8)
-![JavaScript](https://img.shields.io/badge/JavaScript-0d0d18?style=for-the-badge&logo=javascript&logoColor=818cf8)
-![FastAPI](https://img.shields.io/badge/FastAPI-0d0d18?style=for-the-badge&logo=fastapi&logoColor=818cf8)
-![Discord.py](https://img.shields.io/badge/Discord.py-0d0d18?style=for-the-badge&logo=discord&logoColor=818cf8)
-![Redis](https://img.shields.io/badge/Redis-0d0d18?style=for-the-badge&logo=redis&logoColor=818cf8)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-0d0d18?style=for-the-badge&logo=postgresql&logoColor=818cf8)
-![SQLite](https://img.shields.io/badge/SQLite-0d0d18?style=for-the-badge&logo=sqlite&logoColor=818cf8)
-![Git](https://img.shields.io/badge/Git-0d0d18?style=for-the-badge&logo=git&logoColor=818cf8)
-![Linux](https://img.shields.io/badge/Linux-0d0d18?style=for-the-badge&logo=linux&logoColor=818cf8)
-![Claude AI](https://img.shields.io/badge/Claude%20AI-0d0d18?style=for-the-badge&logo=anthropic&logoColor=818cf8)
-
-</div>
-
----
-
-<div align="center">
-
-### `── GITHUB STATS ──`
-
-<br/>
-
-<img src="https://github-readme-stats.vercel.app/api?username=1shot-1moan&show_icons=true&theme=transparent&hide_border=true&title_color=818cf8&icon_color=3b82f6&text_color=a78bfa&bg_color=0d0d18&count_private=true&rank_icon=github&include_all_commits=true" width="48%" />
-<img src="https://streak-stats.demolab.com?user=1shot-1moan&theme=transparent&hide_border=true&ring=818cf8&fire=3b82f6&currStreakLabel=818cf8&sideLabels=a78bfa&dates=555577&background=0d0d18&stroke=1a0a2e" width="48%" />
-
-<br/>
-
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=1shot-1moan&layout=compact&theme=transparent&hide_border=true&title_color=818cf8&text_color=a78bfa&bg_color=0d0d18&langs_count=8" width="42%" />
-
-</div>
-
----
-
-<div align="center">
-
-### `── TROPHIES ──`
-
-<br/>
-
-<img src="https://github-trophies.vercel.app/?username=1shot-1moan&theme=discord&no-frame=true&no-bg=true&margin-w=6&column=7" />
-
-</div>
-
----
-
-<div align="center">
-
-### `── ACTIVITY ──`
-
-<br/>
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=1shot-1moan&theme=tokyo-night&hide_border=true&bg_color=0d0d18&color=818cf8&line=3b82f6&point=a78bfa&area=true&area_color=1a0a2e" width="100%" />
-
-</div>
-
----
-
-<div align="center">
-
-*quietly building. loudly shipping.*
-
-<img src="https://capsule-render.vercel.app/api?type=waving&height=140&color=0:0a1628,50:1a0a2e,100:0d0d18&section=footer" />
+<img src="https://capsule-render.vercel.app/api?type=waving&height=120&section=footer&color=0:020617,50:0f172a,100:111827" width="100%" />
 
 </div>
