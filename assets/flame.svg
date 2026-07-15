@@ -1,7 +1,0 @@
-<svg width="360" height="260" viewBox="0 0 360 260" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="360" height="260" rx="16" fill="#05070d"/>
-  <path d="M174 223C116 206 91 157 111 107C122 80 150 67 150 31C189 55 207 86 196 126C221 107 225 78 219 54C265 91 281 133 263 174C248 209 214 231 174 223Z" fill="#f8fafc"/>
-  <path d="M177 201C148 189 138 161 151 133C158 118 176 108 176 88C200 109 208 132 195 157C212 145 220 128 220 108C245 138 238 181 205 198C197 202 186 204 177 201Z" fill="#090b12"/>
-  <path d="M113 214C158 237 223 234 263 203" stroke="#334155" stroke-width="8" stroke-linecap="round"/>
-  <text x="68" y="235" fill="#64748b" font-family="Consolas, monospace" font-size="16">execution over noise</text>
-</svg>

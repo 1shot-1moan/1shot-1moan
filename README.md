@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./assets/profile-banner.svg" width="100%" alt="1SHOT - Script Kittens banner" />
+<img src="./assets/hero-generated.png" width="100%" alt="Dark cyber ink developer banner" />
 
 <br/>
 
@@ -26,9 +26,9 @@
 <table>
 <tr>
 <td width="36%" align="center">
-  <img src="./assets/brain.svg" width="100%" alt="Brain illustration" />
+  <img src="./assets/about-generated.png" width="100%" alt="Cyber brain and backend systems illustration" />
 </td>
-<td width="64%">
+<td width="60%">
 
 Hey, I am **1shot**, the builder behind **Script Kittens**.
 
@@ -151,8 +151,8 @@ branding sync
 ![ImGui](https://img.shields.io/badge/Dear%20ImGui-05070d?style=for-the-badge&logo=framework&logoColor=f8fafc)
 
 </td>
-<td width="36%" align="center">
-  <img src="./assets/flame.svg" width="100%" alt="Flame illustration" />
+<td width="40%" align="center">
+  <img src="./assets/projects-generated.png" width="100%" alt="Software update and backend engine illustration" />
 </td>
 </tr>
 </table>
