@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./assets/hero-generated.png" width="100%" alt="Dark cyber ink developer banner" />
+<img src="./assets/hero.jpg" width="100%" alt="1shot banner: black cat over a red sun and gold waves, Script Kittens" />
 
 <br/>
 
