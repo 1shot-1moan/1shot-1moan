@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Generates an animated "jet over contribution grid" SVG using a GitHub
+ * Generates an animated "rocket over contribution grid" SVG using a GitHub
  * user's REAL contribution calendar (last 34 weeks, same layout as
  * GitHub's own heatmap: 34 columns x 7 rows).
  *
@@ -26,14 +26,28 @@ const GRID_X = 20;
 const GRID_Y = 15;
 const WIDTH = 513;
 const HEIGHT = 170;
-const JET_X_START = 35;
-const JET_X_END = 478;
+const ROCKET_X_START = 35;
+const ROCKET_X_END = 478;
 const LOOP_DUR = 20; // seconds, one full there-and-back pass
-const MAX_TARGETS = 12; // how many "busiest" days the jet fires on
+const MAX_TARGETS = 12; // how many "busiest" days the rocket fires on
 const FLASH_COLOR = "#39d353";
 const BULLET_COLOR = "#7ee787";
 const BLAST_COLOR = "#56d364";
 const PAD_Y = 128; // where bullets launch from (just under the grid)
+const EASE = "0.42 0 0.58 1"; // ease-in-out, used for smooth flight motion
+
+// Fixed dark-theme contribution palette (matches GitHub's own dark scheme).
+// The GraphQL API's `color` field returns *light*-theme hex codes regardless
+// of the caller's own theme, which is why cells used to render as pale
+// squares on our dark card background. contributionLevel is theme-agnostic,
+// so we map it ourselves.
+const LEVEL_COLOR = {
+  NONE: "#161b22",
+  FIRST_QUARTILE: "#0e4429",
+  SECOND_QUARTILE: "#006d32",
+  THIRD_QUARTILE: "#26a641",
+  FOURTH_QUARTILE: "#39d353",
+};
 
 if (!USERNAME) {
   console.error("Missing GH_USERNAME env var");
@@ -53,7 +67,7 @@ const QUERY = `
             contributionDays {
               date
               contributionCount
-              color
+              contributionLevel
             }
           }
         }
@@ -87,7 +101,7 @@ function buildCells(weeks) {
   const padded = Array.from({ length: padCount }, () => ({
     contributionDays: Array.from({ length: ROWS }, () => ({
       contributionCount: 0,
-      color: "#161b22",
+      contributionLevel: "NONE",
       date: null,
     })),
   })).concat(recent);
@@ -100,7 +114,7 @@ function buildCells(weeks) {
         row,
         x: GRID_X + col * STEP,
         y: GRID_Y + row * STEP,
-        color: day.color || "#161b22",
+        color: LEVEL_COLOR[day.contributionLevel] || LEVEL_COLOR.NONE,
         count: day.contributionCount || 0,
         date: day.date,
       });
@@ -138,15 +152,23 @@ function buildGrid(cells, targets) {
       svg += `<rect x="${c.x.toFixed(2)}" y="${c.y.toFixed(2)}" width="${CELL}" height="${CELL}" rx="2" ry="2" fill="${c.color}"/>\n`;
       continue;
     }
-    // Flash brighter twice: once as the jet passes forward, once on the way back
+    // Flash brighter twice: once as the rocket passes forward, once on the way back.
+    // rise/fall are clamped to whatever gap actually exists before the next
+    // keyTime (both the t1->t2 gap and the t2->1 tail) so keyTimes stay
+    // strictly increasing even for edge columns where the forward and
+    // backward passes land close together (e.g. the last column, where the
+    // turnaround puts both hits ~0.04 apart).
     const tFwd = keyTimeForCol(c.col, "forward");
     const tBack = keyTimeForCol(c.col, "backward");
     const [t1, t2] = [Math.min(tFwd, tBack), Math.max(tFwd, tBack)];
-    const dur = 0.006;
+    const safeGap = Math.min(t2 - t1, 1 - t2);
+    const fall = Math.min(0.05, safeGap * 0.4);
+    const rise = Math.min(0.01, fall * 0.3);
     svg += `<rect x="${c.x.toFixed(2)}" y="${c.y.toFixed(2)}" width="${CELL}" height="${CELL}" rx="2" ry="2" fill="${c.color}">` +
-      `<animate attributeName="fill" dur="${LOOP_DUR}s" repeatCount="indefinite" ` +
-      `keyTimes="0;${fmt(t1)};${fmt(t1 + dur)};${fmt(t2)};${fmt(t2 + dur)};1" ` +
-      `values="${c.color};${c.color};${FLASH_COLOR};${c.color};${FLASH_COLOR};${c.color}"/>` +
+      `<animate attributeName="fill" dur="${LOOP_DUR}s" repeatCount="indefinite" calcMode="spline" ` +
+      `keyTimes="0;${fmt(t1)};${fmt(t1 + rise)};${fmt(t1 + fall)};${fmt(t2)};${fmt(t2 + rise)};${fmt(t2 + fall)};1" ` +
+      `keySplines="${EASE};${EASE};${EASE};${EASE};${EASE};${EASE};${EASE}" ` +
+      `values="${c.color};${c.color};${FLASH_COLOR};${c.color};${c.color};${FLASH_COLOR};${c.color};${c.color}"/>` +
       `</rect>\n`;
   }
   return svg;
@@ -161,25 +183,28 @@ function buildBulletsAndBlasts(targets) {
     const ordered = dir === "forward" ? targets : [...targets].reverse();
     for (const c of ordered) {
       const t = keyTimeForCol(c.col, dir);
-      const rise = t - dur * 3;
+      // Clamp to (0, 1) so extreme columns (near col 0 or COLS-1, where the
+      // backward/forward hit time sits close to the timeline start/end)
+      // can't push a keyTime past the 0..1 bounds animate requires.
+      const rise = Math.max(t - dur * 3, 0.0005);
       const arrive = t;
-      const fadeStart = t;
-      const fadeEnd = t + dur;
+      const fadeEnd = Math.min(t + dur * 4, 0.9995);
       const cx = fmt(c.x + CELL / 2);
       const targetY = fmt(c.y + CELL / 2);
 
-      bullets += `<circle cx="${cx}" cy="${PAD_Y}" r="2.4" fill="${BULLET_COLOR}">` +
-        `<animate attributeName="cy" dur="${LOOP_DUR}s" repeatCount="indefinite" ` +
-        `keyTimes="0;${fmt(rise)};${fmt(arrive)};1" values="${PAD_Y};${PAD_Y};${targetY};${targetY}"/>` +
+      bullets += `<circle cx="${cx}" cy="${PAD_Y}" r="2" fill="${BULLET_COLOR}" filter="url(#softGlow)">` +
+        `<animate attributeName="cy" dur="${LOOP_DUR}s" repeatCount="indefinite" calcMode="spline" ` +
+        `keyTimes="0;${fmt(rise)};${fmt(arrive)};1" keySplines="${EASE};${EASE}" ` +
+        `values="${PAD_Y};${PAD_Y};${targetY};${targetY}"/>` +
         `<animate attributeName="opacity" dur="${LOOP_DUR}s" repeatCount="indefinite" ` +
         `keyTimes="0;${fmt(rise)};${fmt(arrive)};${fmt(fadeEnd)};1" values="0;1;1;0;0"/>` +
         `</circle>\n`;
 
-      blasts += `<circle cx="${cx}" cy="${targetY}" r="0" fill="none" stroke="${BLAST_COLOR}" stroke-width="1.6" opacity="0">` +
-        `<animate attributeName="r" dur="${LOOP_DUR}s" repeatCount="indefinite" ` +
-        `keyTimes="0;${fmt(arrive)};${fmt(arrive + dur * 3)};1" values="0;1;9;9"/>` +
-        `<animate attributeName="opacity" dur="${LOOP_DUR}s" repeatCount="indefinite" ` +
-        `keyTimes="0;${fmt(arrive)};${fmt(arrive + dur * 3)};1" values="0;1;1;0"/>` +
+      blasts += `<circle cx="${cx}" cy="${targetY}" r="0" fill="url(#blastGlow)" opacity="0">` +
+        `<animate attributeName="r" dur="${LOOP_DUR}s" repeatCount="indefinite" calcMode="spline" ` +
+        `keyTimes="0;${fmt(arrive)};${fmt(fadeEnd)};1" keySplines="${EASE};${EASE}" values="0;1;8;8"/>` +
+        `<animate attributeName="opacity" dur="${LOOP_DUR}s" repeatCount="indefinite" calcMode="spline" ` +
+        `keyTimes="0;${fmt(arrive)};${fmt(fadeEnd)};1" keySplines="${EASE};${EASE}" values="0;0.85;0;0"/>` +
         `</circle>\n`;
     }
   }
@@ -197,22 +222,57 @@ function buildStars() {
   ).join("\n");
 }
 
-function buildJet() {
-  return `<g id="jet">
+// A small, smooth rocket: rounded fuselage + gradient fill + soft blurred
+// engine glow. Travels the flight path with eased (not linear) motion so it
+// accelerates/decelerates instead of moving at a constant robotic speed.
+function buildRocket() {
+  return `<g id="rocket">
   <g transform="translate(0,0)">
-    <polygon points="0,-16 8,6 4,3 -4,3 -8,6" fill="#58a6ff" stroke="#1f6feb" stroke-width="1"/>
-    <polygon points="-8,6 -14,12 -4,7" fill="#388bfd"/>
-    <polygon points="8,6 14,12 4,7" fill="#388bfd"/>
-    <circle cx="0" cy="-6" r="2.2" fill="#c9e6ff"/>
-    <polygon points="-3,7 3,7 0,15" fill="#f0883e">
-      <animate attributeName="opacity" values="0.5;1;0.6;1" dur="0.18s" repeatCount="indefinite"/>
-    </polygon>
+    <ellipse cx="0" cy="10" rx="5.5" ry="3.2" fill="#38bdf8" opacity="0.35" filter="url(#softGlow)">
+      <animate attributeName="rx" values="4.5;6.5;4.5" dur="0.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.25;0.55;0.25" dur="0.5s" repeatCount="indefinite"/>
+    </ellipse>
+    <path d="M0,-15 C4.5,-9 4.5,3 2.6,8 L-2.6,8 C-4.5,3 -4.5,-9 0,-15 Z" fill="url(#rocketBody)" stroke="#0b3a55" stroke-width="0.6"/>
+    <path d="M-2.6,8 L-6.5,14 L-2.2,10.5 Z" fill="#7c3aed"/>
+    <path d="M2.6,8 L6.5,14 L2.2,10.5 Z" fill="#7c3aed"/>
+    <circle cx="0" cy="-4" r="2.1" fill="#e0f2fe" opacity="0.9"/>
+    <path d="M-1.8,9 C-1.8,12 0,16 0,16 C0,16 1.8,12 1.8,9 Z" fill="url(#flame)">
+      <animate attributeName="opacity" values="0.7;1;0.75;0.95;0.7" dur="0.22s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="scale" additive="sum"
+        values="1 1;1 1.15;1 0.9;1 1.1;1 1" dur="0.22s" repeatCount="indefinite"/>
+    </path>
   </g>
   <animateTransform attributeName="transform" attributeType="XML" type="translate"
-    dur="${LOOP_DUR}s" repeatCount="indefinite"
-    keyTimes="0;0.5;1"
-    values="${JET_X_START}.00,140.00;${JET_X_END}.00,140.00;${JET_X_START}.00,140.00"/>
+    dur="${LOOP_DUR}s" repeatCount="indefinite" calcMode="spline"
+    keyTimes="0;0.5;1" keySplines="${EASE};${EASE}"
+    values="${ROCKET_X_START}.00,140.00;${ROCKET_X_END}.00,140.00;${ROCKET_X_START}.00,140.00"/>
 </g>`;
+}
+
+function buildDefs() {
+  return `<defs>
+  <linearGradient id="rocketBody" x1="0" y1="-15" x2="0" y2="8" gradientUnits="userSpaceOnUse">
+    <stop offset="0%" stop-color="#7ee7ff"/>
+    <stop offset="55%" stop-color="#38bdf8"/>
+    <stop offset="100%" stop-color="#1f6feb"/>
+  </linearGradient>
+  <linearGradient id="flame" x1="0" y1="8" x2="0" y2="16" gradientUnits="userSpaceOnUse">
+    <stop offset="0%" stop-color="#fef08a"/>
+    <stop offset="45%" stop-color="#f59e0b"/>
+    <stop offset="100%" stop-color="#ef4444" stop-opacity="0"/>
+  </linearGradient>
+  <radialGradient id="blastGlow">
+    <stop offset="0%" stop-color="${BLAST_COLOR}" stop-opacity="0.9"/>
+    <stop offset="100%" stop-color="${BLAST_COLOR}" stop-opacity="0"/>
+  </radialGradient>
+  <filter id="softGlow" x="-150%" y="-150%" width="400%" height="400%">
+    <feGaussianBlur stdDeviation="1.6" result="blur"/>
+    <feMerge>
+      <feMergeNode in="blur"/>
+      <feMergeNode in="SourceGraphic"/>
+    </feMerge>
+  </filter>
+</defs>`;
 }
 
 function buildSvg(weeks) {
@@ -221,15 +281,16 @@ function buildSvg(weeks) {
   const { bullets, blasts } = buildBulletsAndBlasts(targets);
 
   return `<svg viewBox="0 0 ${WIDTH} ${HEIGHT}" xmlns="http://www.w3.org/2000/svg">
+${buildDefs()}
 <rect x="0" y="0" width="${WIDTH}" height="${HEIGHT}" fill="#0d1117"/>
 ${buildStars()}
 <g id="grid">
 ${buildGrid(cells, targets)}</g>
-<g id="bullets">
-${bullets}</g>
 <g id="blasts">
 ${blasts}</g>
-${buildJet()}
+<g id="bullets">
+${bullets}</g>
+${buildRocket()}
 </svg>`;
 }
 
