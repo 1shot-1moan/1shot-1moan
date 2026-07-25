@@ -11,7 +11,7 @@
 <br/>
 <br/>
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=18&duration=2600&pause=700&color=38BDF8&center=true&vCenter=true&width=780&lines=systems+that+ship;desktop+clients+with+backend+control;reseller+portals%2C+auth%2C+updates%2C+automation;Script+Kittens+is+the+brand.+execution+is+the+standard.)](https://github.com/1shot-1moan)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Playfair+Display&weight=700&size=20&duration=2600&pause=700&color=D93847&center=true&vCenter=true&width=780&lines=systems+that+ship;desktop+clients+with+backend+control;reseller+portals%2C+auth%2C+updates%2C+automation;Script+Kittens+is+the+brand.+execution+is+the+standard.)](https://github.com/1shot-1moan)
 
 </div>
 
@@ -33,12 +33,6 @@
 Hey, I am **1shot**, the builder behind **Script Kittens**.
 
 I build practical software: backend systems, reseller portals, desktop clients, Discord automation, authorization flows, update systems, and management panels that are meant to be used by real people.
-
-```text
-make it usable
-make it controllable
-make it reliable enough to sell
-```
 
 The main focus is simple: build tools that can be shipped, managed, updated, and trusted without turning every small change into a full rebuild.
 
@@ -76,7 +70,7 @@ server-managed updates
 reseller authorization
 ```
 
-[![Repo](https://img.shields.io/badge/View%20Repo-UID%20Bypass%20Exe-05070d?style=for-the-badge&logo=github&logoColor=38bdf8)](https://github.com/1shot-1moan/UID-Bypass-Exe)
+[![Website](https://img.shields.io/badge/Website-script--kittens.com-05070d?style=for-the-badge&logo=googlechrome&logoColor=38bdf8)](https://script-kittens.com)
 
 </td>
 <td width="50%">

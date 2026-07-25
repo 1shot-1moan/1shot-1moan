@@ -194,7 +194,7 @@ function buildBulletsAndBlasts(targets) {
 
       bullets += `<circle cx="${cx}" cy="${PAD_Y}" r="2" fill="${BULLET_COLOR}" filter="url(#softGlow)">` +
         `<animate attributeName="cy" dur="${LOOP_DUR}s" repeatCount="indefinite" calcMode="spline" ` +
-        `keyTimes="0;${fmt(rise)};${fmt(arrive)};1" keySplines="${EASE};${EASE}" ` +
+        `keyTimes="0;${fmt(rise)};${fmt(arrive)};1" keySplines="${EASE};${EASE};${EASE}" ` +
         `values="${PAD_Y};${PAD_Y};${targetY};${targetY}"/>` +
         `<animate attributeName="opacity" dur="${LOOP_DUR}s" repeatCount="indefinite" ` +
         `keyTimes="0;${fmt(rise)};${fmt(arrive)};${fmt(fadeEnd)};1" values="0;1;1;0;0"/>` +
@@ -202,9 +202,9 @@ function buildBulletsAndBlasts(targets) {
 
       blasts += `<circle cx="${cx}" cy="${targetY}" r="0" fill="url(#blastGlow)" opacity="0">` +
         `<animate attributeName="r" dur="${LOOP_DUR}s" repeatCount="indefinite" calcMode="spline" ` +
-        `keyTimes="0;${fmt(arrive)};${fmt(fadeEnd)};1" keySplines="${EASE};${EASE}" values="0;1;8;8"/>` +
+        `keyTimes="0;${fmt(arrive)};${fmt(fadeEnd)};1" keySplines="${EASE};${EASE};${EASE}" values="0;1;8;8"/>` +
         `<animate attributeName="opacity" dur="${LOOP_DUR}s" repeatCount="indefinite" calcMode="spline" ` +
-        `keyTimes="0;${fmt(arrive)};${fmt(fadeEnd)};1" keySplines="${EASE};${EASE}" values="0;0.85;0;0"/>` +
+        `keyTimes="0;${fmt(arrive)};${fmt(fadeEnd)};1" keySplines="${EASE};${EASE};${EASE}" values="0;0.85;0;0"/>` +
         `</circle>\n`;
     }
   }
@@ -238,8 +238,6 @@ function buildRocket() {
     <circle cx="0" cy="-4" r="2.1" fill="#e0f2fe" opacity="0.9"/>
     <path d="M-1.8,9 C-1.8,12 0,16 0,16 C0,16 1.8,12 1.8,9 Z" fill="url(#flame)">
       <animate attributeName="opacity" values="0.7;1;0.75;0.95;0.7" dur="0.22s" repeatCount="indefinite"/>
-      <animateTransform attributeName="transform" type="scale" additive="sum"
-        values="1 1;1 1.15;1 0.9;1 1.1;1 1" dur="0.22s" repeatCount="indefinite"/>
     </path>
   </g>
   <animateTransform attributeName="transform" attributeType="XML" type="translate"
