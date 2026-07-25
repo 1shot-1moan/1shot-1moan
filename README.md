@@ -26,7 +26,7 @@
 <table>
 <tr>
 <td width="36%" align="center">
-  <img src="./assets/about-generated.png" width="100%" alt="Cyber brain and backend systems illustration" />
+  <img src="./assets/about.jpg" width="100%" alt="Japanese ink-style collage: cranes over a great wave and cherry blossoms" />
 </td>
 <td width="60%">
 
@@ -50,7 +50,7 @@ The main focus is simple: build tools that can be shipped, managed, updated, and
 
 <div align="center">
 
-<img src="./assets/terminal-generated.png" width="100%" alt="Terminal identity card" />
+<img src="./assets/terminal.jpg" width="100%" alt="1shot identity card: red dragon over mountains, builder behind Script Kittens" />
 
 </div>
 
