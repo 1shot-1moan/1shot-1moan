@@ -161,6 +161,21 @@ branding sync
 
 <div align="center">
 
+## Activity
+
+<img src="https://raw.githubusercontent.com/1shot-1moan/1shot-1moan/main/dist/github-jet.svg" width="100%" alt="Animated GitHub contribution heatmap" />
+
+<br/>
+<br/>
+
+<img src="https://streak-stats.demolab.com?user=1shot-1moan&hide_border=true&background=05070d&ring=38bdf8&fire=38bdf8&currStreakLabel=38bdf8&sideLabels=e2e8f0&currStreakNum=e2e8f0&sideNums=e2e8f0&dates=64748b" height="165" />
+
+</div>
+
+---
+
+<div align="center">
+
 ## Connect
 
 [![Discord](https://img.shields.io/badge/Discord-Script%20Kittens-05070d?style=for-the-badge&logo=discord&logoColor=38bdf8)](https://discord.gg/tWwUSPh5GT)
